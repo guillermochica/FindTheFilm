@@ -18,8 +18,13 @@ var req = http.request(options, function(res) {
 			   
 			   res.on('end', function () {
 			   		datos = JSON.parse(dataJSON);
-			   		console.log('Title: ' + datos.Title + "\nYear: " + datos.Year + "\nDirector: " + datos.Director + '\nActors: ' + datos.Actors +
-			   		 '\nCountry: ' + datos.Country + '\nLanguage: ' + datos.Language + '\nPlot: ' + datos.Plot);
+			   		if (datos.Response == 'False') {
+			   			console.log(datos.Error);
+			   		}
+			   		else{
+			   			console.log('Title: ' + datos.Title + "\nYear: " + datos.Year + "\nDirector: " + datos.Director + '\nActors: ' + datos.Actors +
+			   		 	'\nCountry: ' + datos.Country + '\nLanguage: ' + datos.Language + '\nPlot: ' + datos.Plot);
+			   		}
 			   });
 		   });
 
