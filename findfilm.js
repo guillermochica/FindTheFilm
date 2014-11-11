@@ -23,7 +23,7 @@ var req = http.request(options, function(res) {
 			   		}
 			   		else{
 			   			console.log('Title: ' + datos.Title + "\nYear: " + datos.Year + "\nDirector: " + datos.Director + '\nActors: ' + datos.Actors +
-			   		 	'\nCountry: ' + datos.Country + '\nLanguage: ' + datos.Language + '\nPlot: ' + datos.Plot);
+			   		 	'\nCountry: ' + datos.Country + '\nLanguage: ' + datos.Language + '\nRuntime: ' + datos.Runtime + '\nPlot: ' + datos.Plot);
 			   		}
 			   });
 		   });
