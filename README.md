@@ -7,4 +7,5 @@ This program uses the OMDB API (http://www.omdbapi.com/) which is like a third p
 
 **Instructions**:
 Open a terminal and write `node findfilm name of the film` . Example: `node findfilm la strada`.
-Note: You need to have instaled node.js to use this program.
+
+Note: You must have instaled node.js to use this program.
