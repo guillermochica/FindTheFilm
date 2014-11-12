@@ -1,7 +1,6 @@
 var http = require('http');
-var title = process.argv[2]?process.argv[2]:''; //example: the+godfather (note that you must use "+" instead of blank spaces)
-var length = process.argv[3]?process.argv[3]:'short'; //add full if you want the long plot
-
+var title = process.argv.slice(2); 
+var length = 'short'; //change it to full if you want the full plot
 var options = {
     host: 'www.omdbapi.com',
     path: '/?t=' + title +'&y=&plot=' + length + '&r=json', 
